@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ****************************** Navbar Section ****************************** */
+
+.navbarMain {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.headerSection {
+    background-image: url("images/bg-image-alt.jpg");
+    /* background-image: url("images/bg-image-alt.jpg");      alternate background image*/
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+.logo {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link::after {
+    content: "";
+    display: flex;
+    height: 1px;
+    background-color: #fff;
+    width: 0%;
+    transform: translateY(10px);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* ****************************** Welcome Page Buttons Section ****************************** */
+
+.buttonContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.orderNowButton {
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 24px;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.orderNowButton:hover {
+    background-color: #fff;
+    color: rgb(234, 0, 255);
+}
+
+
+/* ****************************** Images Section ****************************** */
+
+#imagesSection {
+    height: 650px;
+    /* background: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(56,24,66,1) 50%, rgba(29,29,29,1) 100%); */
+    background-color: #181717;
+}
+
+#imagesSection::after {
+    margin: auto;
+    content: "";
+    display: flex;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(73, 72, 72);
+    transform: translateY(-30px);
+}
+
+.imagesHeading {
+    color: #fff;
+    text-align: center;
+    transform: translateY(70px);
+}
+
+.carousel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.carouselImage {
+    height: 400px;
+    border-radius: 20px;
+    filter: brightness(0.8);
+}
+
+
+/* ****************************** Features Section ****************************** */
+
+#featuresSection {
+    height: fit-content;
+    padding: 100px 0;
+    background-color: #181717;
+    display: flex;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(56,24,66,1) 50%, rgba(29,29,29,1) 100%); */
+}
+
+.featuresContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 95px;
+    justify-content: center;
+    width: 100%;
+}
+
+.featuresSpecs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading Hover Effect */
+.engineHeading {
+    line-height: 1.7;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.engineHeading:hover {
+    cursor: pointer;
+    color: #ffa500;
+}
+
+.engineHeading::before {
+    content: "";
+    opacity: 0;
+    height: 3px;
+    background-color: #ffa500;
+    width: 100%;
+    display: block;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.engineHeading:hover::before {
+    content: "";
+    opacity: 1;
+    height: 3px;
+    background-color: #ffa500;
+    width: 100%;
+    display: block;
+    transform: translateY(50px);
+}
+
+.engineHeading::after {
+    content: "";
+    opacity: 0;
+    height: 3px;
+    background-color: #ffa500;
+    width: 100%;
+    display: block;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.engineHeading:hover::after {
+    content: "";
+    opacity: 1;
+    height: 3px;
+    background-color: #ffa500;
+    width: 100%;
+    display: block;
+    transform: translateY(-50px);
+}
+/* ************************* */
+
+.engineText {
+    width: 440px;
+    line-height: 1.5;
+}
+
+.featureImage {
+    margin: auto;
+}
+
+.engineImage {
+    width: 50%;
+}
+
+.sideHeading {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sideHeading:hover {
+    color: #a7a7a7;
+}
+
+.sideHeading::after {
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color: #fff;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.sideHeading:hover::after {
+    width: 100%;
+}
+
+.sideContent {
+    line-height: 1.7;
+}
+
+
+/* ****************************** Pricing Section ****************************** */
+#pricingSection {
+    height: fit-content;
+    background-color: #181717;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#pricingSection::before {
+    margin: auto;
+    content: "";
+    display: flex;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(73, 72, 72);
+    transform: translateY(-80px);
+}
+
+.pricingArea {
+    display: flex;
+    justify-content: center;
+}
+
+.pricingHeading {
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 18px;
+}
+
+.card-title {
+    border-bottom: #a8a7a7 solid 1px;
+}
+
+
+/* ****************************** Contact Section ****************************** */
+
+#contactSection {
+    background-color: #181717;
+    padding-bottom: 80px;
+}
+
+#contactSection::before {
+    margin: auto;
+    content: "";
+    display: flex;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(73, 72, 72);
+    transform: translateY(-80px);
+}
+
+.contactArea {
+    width: 50%;
+}
+
+.contactHeading {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* ****************************** Footer Section ****************************** */
+
+#footerSection {
+    height: 150px;
+    background-color: #0c0c0c;
+    text-align: center;
+}
+
+.footerArea {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footerHeading {
+    margin: auto;
+    color: rgb(73, 72, 72);
+    margin-bottom: 10px;
+}
+
+.social {
+    text-decoration: none;
+    margin: auto;
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+
+/* ****************************** Media Queries ****************************** */
+
+@media(max-width: 768px) {
+
+    /* Welcome Page */
+    .buttonContainer {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .orderNowButton {
+        width: 300px;
+    }
+
+    .headerSection {
+        background-position: center;
+    }
+
+    /* Images Section */
+    .carouselImage {
+        height: 250px;
+    }
+
+    #imagesSection {
+        height: 540px;
+    }
+
+    /* Features Section */
+    .engineHeading {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 991px) {
+
+    /* Features Section */
+    .featuresContent {
+        row-gap: 40px;
+    }
+
+    .engineImage {
+        width: 45%;
+    }
+
+    .engineHeading {
+        margin-top: 50px;
+    }
+
+    /* Pricing Section */
+    .pricingHeading {
+        margin-top: 0px;
+    }
+
+    /* Contact Section */
+    .contactArea {
+        width: 75%;
+    }
+}

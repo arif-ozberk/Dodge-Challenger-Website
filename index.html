@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="home" class="headerSection">
+        <!-- Navbar Section -->
+        <nav class="navbarMain navbar navbar-dark">
+            <div class="container-lg navbar-expand-lg">
+                <!-- Navbar Logo -->
+                <a class="navbar-brand" href="#">
+                    <span class="logo">CHALLENGER</span>
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-lg-5">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item ms-lg-5">
+                            <a class="nav-link" href="#imagesSection">Images</a>
+                        </li>
+                        <li class="nav-item ms-lg-5">
+                            <a class="nav-link" href="#featuresSection">Features</a>
+                        </li>
+                        <li class="nav-item ms-lg-5">
+                            <a class="nav-link" href="#pricingSection">Pricing</a>
+                        </li>
+                        <li class="nav-item ms-lg-5">
+                            <a class="nav-link" href="#contactSection">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="buttonContainer">
+            <a class="orderNowButton" href="#pricingSection">
+                <span>Order Now</span>
+            </a>
+            <a class="orderNowButton" href="#featuresSection">
+                <span>Explore</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Images Section -->
+    <section id="imagesSection" class="container-fluid">
+        <h2 class="imagesHeading">Gallery</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/carousel-1.jpg" class="carouselImage" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/carousel-2.jpg" class="carouselImage" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/carousel-3.jpg" class="carouselImage" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="featuresSection" class="container-fluid">
+        <div class="featuresContent container-lg p-0">
+            <div class="row container-lg m-0">
+                <div class="featuresSpecs col-lg-6 text-light text-center m-auto">
+                    <h2 class="engineHeading">THE HEART OF THE BEAST</h2>
+                    <p class="engineText">
+                        The 2022 Dodge Challenger isn’t one to be messed with. Thanks to its Supercharged 6.2L High-Output HEMI® V8 engine, the
+                        SRT® Super Stock has the highest horsepower of any production car and is the most powerful muscle car.
+                    </p>
+                </div>
+                <div class="featureImage col-lg-6 d-flex justify-content-center">
+                    <img class="engineImage" src="images/engine-img.png" alt="engine-img">
+                </div>
+            </div>
+
+            <div class="row container-lg m-0 text-center text-light">
+                <div class="p-5 col-lg-4">
+                    <h4 class="sideHeading">SPORT BRAKE SYSTEM</h4>
+                    <p class="sideContent">
+                        The sport brake system features 12.6-inch front vented rotors and comes standard on the Challenger SXT.
+                    </p>
+                </div>
+                <div class="p-5 col-lg-4">
+                    <h4 class="sideHeading">POWER STANCE</h4>
+                    <p class="sideContent">
+                        The Widebody takes a wider stance with fender flares to accommodate the wider wheels and tires.
+                    </p>
+                </div>
+                <div class="p-5 col-lg-4">
+                    <h4 class="sideHeading">IT'S GOT GRIP</h4>
+                    <p class="sideContent">
+                        Equipped with 20x11-inch wheels and Pirelli® P Zero® tires, the result is improved straight-line and lateral grip.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricingSection" class="container-fluid">
+        <div class="pricingContent text-center mb-5">
+            <h2 class="pricingHeading">PRICING & OPTIONS</h2>
+            <div class="row">
+                <div class="pricingArea col-lg-4 col-md-6">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">392 HEMI® V8 ENGINE</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricingArea col-lg-4 col-md-6">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">5.7L HEMI® V8 ENGINE</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricingArea col-lg-4 col-md-6">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">3.6L PENTA® V6 ENGINE</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contactSection" class="container-fluid">
+        <div class="contactArea container-lg">
+            <h2 class="contactHeading">SEND US A MAIL</h2>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="">
+                <label for="exampleFormControlTextarea1" class="form-label text-light">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary mt-3">Send</button>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <section id="footerSection" class="container-fluid">
+        <div class="footerArea container-lg">
+            <p class="footerHeading">Dodge Challenger &copy; 2023</p>
+            <div class="social">
+                <a class="socialIcon" href="https://www.instagram.com/arif.ozberk.24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a class="socialIcon" href="https://www.instagram.com/arif.ozberk.24/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a class="socialIcon" href="https://www.instagram.com/arif.ozberk.24/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
